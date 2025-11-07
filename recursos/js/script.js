@@ -1,10 +1,5 @@
-/* script.js - Vanilla JS para Biblioteca El Quijote de Krypton
-   - Inserta datos de ejemplo, maneja catálogo, búsqueda, filtros, modal, localStorage
-*/
 
-/* ------------------------
-   Datos de ejemplo (libros)
-   ------------------------ */
+
 const BOOKS = [
   {
     id:1,
@@ -61,12 +56,10 @@ const BOOKS = [
     avail:"Prestado",
     cover:"recursos/img/portada-placeholder.png"
   },
-  // Agrega más libros inventados si quieres...
+  
 ];
 
-/* ------------------------
-   Utilidades comunes
-   ------------------------ */
+
 const $ = (sel, root=document) => root.querySelector(sel);
 const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
 
