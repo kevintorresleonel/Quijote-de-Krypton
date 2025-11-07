@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"><title>Editar Usuario</title>
+<link rel="stylesheet" href="../recursos/css/style.css"></head>
+<body>
+  <header class="site-header"><div class="container header-inner"><h1>Editar Usuario</h1></div></header>
+  <main class="container main-content">
+    <section class="card">
+      <form id="formEditUser">
+        <label>ID Usuario:</label><input type="text" name="id" required>
+        <label>Nuevo Correo:</label><input type="email" name="correo" required>
+        <label>Estado:</label>
+        <select name="estado">
+          <option>Activo</option>
+          <option>Inactivo</option>
+        </select>
+        <input type="submit" value="Actualizar">
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2025 Librería El Quijote de Krypton</p></div></footer>
+<script>
+  document.getElementById('formEditUser')?.addEventListener('submit', e=>{
+    e.preventDefault();
+    alert('Usuario actualizado (simulación).');
+    e.target.reset();
+  });
+</script>
+</body>
+</html>

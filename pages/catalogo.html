@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Catálogo - El Quijote de Krypton</title>
+  <link rel="stylesheet" href="../recursos/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="../index.html" style="text-decoration:none;color:inherit">
+          <h1 class="site-title">Catálogo</h1>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <a href="../index.html" class="link">Inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section>
+      <h2>Catálogo de libros</h2>
+      <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center">
+        <input id="catalogSearch" placeholder="Buscar por título, autor o género..." style="flex:1;padding:0.6rem;border-radius:8px;border:1px solid rgba(11,31,58,0.06)">
+        <select id="filterGenre" style="padding:0.55rem;border-radius:8px;border:1px solid rgba(11,31,58,0.06)">
+          <option value="">Todos los géneros</option>
+        </select>
+        <select id="filterAvail" style="padding:0.55rem;border-radius:8px;border:1px solid rgba(11,31,58,0.06)">
+          <option value="">Cualquier estado</option>
+          <option value="Disponible">Disponible</option>
+          <option value="Prestado">Prestado</option>
+        </select>
+      </div>
+
+      <div id="catalogGrid" class="cards-grid" style="margin-top:1rem"></div>
+    </section>
+
+    <aside style="margin-top:1rem">
+      <div class="card">
+        <h4>Mi lista de lectura <span class="reading-badge" style="background:var(--accent-dark);color:white;padding:0.2rem 0.45rem;border-radius:999px;margin-left:0.5rem">0</span></h4>
+        <div id="readingListRoot" style="margin-top:0.6rem"></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Librería El Quijote de Krypton</p>
+    </div>
+  </footer>
+
+  <div id="modalRoot"></div>
+  <script src="../recursos/js/script.js"></script>
+</body>
+</html>

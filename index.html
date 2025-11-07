@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Librería El Quijote de Krypton</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="recursos/css/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="recursos/img/logo.png" alt="Logo El Quijote" class="logo" onerror="this.style.display='none'">
+          <div>
+            <h1 class="site-title">El Quijote de Krypton</h1>
+            <p class="site-tag">Biblioteca · Préstamo · Comunidad Lectora</p>
+          </div>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+          <button id="btnDarkMode" class="icon-btn" title="Cambiar tema">🌓</button>
+          <button id="btnMenu" class="hamburger" aria-label="Menú">☰</button>
+          <ul class="nav-list" id="navList">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="pages/catalogo.html">Catálogo</a></li>
+            <li><a href="pages/usuarios.html">Usuarios</a></li>
+            <li><a href="pages/prestamos.html">Préstamos</a></li>
+            <li><a href="pages/historial.html">Historial</a></li>
+            <li><a href="pages/admin.html">Administración</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container main-content">
+      <section class="hero">
+        <div class="hero-left">
+          <h2>Bienvenido a <span class="accent">El Quijote de Krypton</span></h2>
+          <p>Una biblioteca pensada para lectores curiosos: préstamos, clubes de lectura, eventos y recursos digitales. Explora nuestro catálogo y crea tu lista de lectura.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="pages/catalogo.html">Ver Catálogo</a>
+            <a class="btn ghost" href="pages/eventos.html">Próximos Eventos</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <!-- banner o ilustración -->
+          <div class="card featured">
+            <h3>Libro destacado</h3>
+            <img src="recursos/img/portada-placeholder.png" alt="Portada destacada" />
+            <h4>Don Quijote de la Mancha</h4>
+            <p class="muted">Miguel de Cervantes — Novela clásica</p>
+            <p class="small">Una obra maestra que inspira nuestra colección: aventuras, humor y reflexión sobre la lectura.</p>
+            <a class="link" href="pages/detalle_libro.html?id=1">Ver detalle</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights">
+        <h3>Novedades y recomendaciones</h3>
+        <div class="cards-grid" id="indexHighlights">
+          <!-- JS inyecta tarjetas de ejemplo -->
+        </div>
+      </section>
+
+      <section class="about">
+        <h3>Sobre nosotros</h3>
+        <p>En El Quijote de Krypton promovemos la lectura y el intercambio cultural. Ofrecemos préstamos presenciales, espacios de estudio, talleres y actividades para todas las edades.</p>
+        <ul class="services">
+          <li>Préstamo domiciliario</li>
+          <li>Sala de estudio y trabajo colaborativo</li>
+          <li>Clubes de lectura y talleres mensuales</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p>© 2025 Librería El Quijote de Krypton</p>
+          <p class="muted">Dirección ficticia · Tel: (000) 123-4567</p>
+        </div>
+        <div>
+          <a href="pages/contacto.html" class="link">Contacto</a>
+          <a href="pages/sobre.html" class="link">Sobre</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="modalRoot"></div>
+
+  <script src="recursos/js/script.js"></script>
+</body>
+</html>

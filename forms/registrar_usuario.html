@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"><title>Registrar Usuario</title>
+<link rel="stylesheet" href="../recursos/css/style.css"></head>
+<body>
+  <header class="site-header"><div class="container header-inner"><h1>Registrar Usuario</h1></div></header>
+  <main class="container main-content">
+    <section class="card">
+      <form id="formRegUser">
+        <label>Nombre:</label><input type="text" name="nombre" required>
+        <label>Correo:</label><input type="email" name="correo" required>
+        <label>Documento:</label><input type="text" name="doc" required>
+        <input type="submit" value="Registrar">
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2025 Librería El Quijote de Krypton</p></div></footer>
+<script>
+  document.getElementById('formRegUser')?.addEventListener('submit', e=>{
+    e.preventDefault();
+    alert('Usuario registrado (simulación).');
+    e.target.reset();
+  });
+</script>
+</body>
+</html>
